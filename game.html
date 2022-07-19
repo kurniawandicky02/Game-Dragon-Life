@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dragon fighter</title>
+	<link rel="shortcut icon" type="text/css" href="down.png">
+	<style type="text/css">
+		body{
+			padding: 0vh;
+			margin: 0vh;
+		}
+		#soldier{
+			width: 30%;
+			float: left;
+			height: 100vh;
+		}
+		#dragon{
+			width: 60%;
+			float: right;
+			height: 10vh;
+			text-align: right;
+		}
+		#s-img{
+			position: absolute;
+			top: 49vh;
+			left: 4vh;
+			height: 30vh;
+		}
+		#d-img{
+			position: absolute;
+			left: 95vh;
+			top: 24vh;
+			height: 50vh;
+		}
+		#background{
+			height: 100vh;
+		}
+		#game-ground{
+			position: absolute;
+		}
+		#bg{
+			position: absolute;
+		}
+		#controls{
+			position: absolute;
+			top: 80vh;
+		}
+		.ply{
+			text-align: center;
+			margin: 1vh;
+			font-size: 5vh;
+			font-weight: bold;
+			background: greenyellow;
+			border: solid;
+			border-radius: 15px;
+		}
+		#DragonLife-t{
+			position: absolute;
+			left: 80%;
+			top: 4vh;
+		}
+		#DragonLife{
+			position: absolute;
+			left: 80%;
+			top: 2vh;
+		}
+		#YourLife-t{
+			position: absolute;
+			left: 4%;
+			top: 4vh;
+		}
+		#YourLife{
+			position: absolute;
+			left: 4%;
+			top: 2vh;
+		}
+		</style>
+</head>
+<body>
+
+<div id="bg">
+	<p id="YourLife-t">Your life</p>
+	<meter id="YourLife" max="100" value="100"></meter>
+	<p id="DragonLife-t">Dragon's life</p>
+	<meter id="DragonLife" max="100" value="100"></meter>
+	<img src="background.jpg" id="background">
+</div>
+
+
+<div id="game-ground">
+	<div id="soldier">
+		<img src="up.png" id="s-img">
+	</div>
+	
+	
+	<div id="dragon">
+		<img src="dragon.png" id="d-img">
+	</div>
+</div>
+
+<div id="controls">
+	<button class="ply" onclick="shoot()">Shoot</button>
+	<button class="ply" onclick="bend()">Bend</button>
+	<a href="menu.html"><button class="ply">menu</button></a>
+</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
